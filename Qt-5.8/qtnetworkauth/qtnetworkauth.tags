@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="class">
+        <name>QAbstractOAuth</name>
+        <filename>qabstractoauth.html</filename>
+        <base>QObject</base>
+        <member kind="property" type="Status">
+            <name>status</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>status-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QVariantMap">
+            <name>extraTokens</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>extraTokens-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QUrl">
+            <name>authorizationUrl</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>authorizationUrl-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>Status</name>
+            <anchor>Status-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NotAuthenticated">
+            <anchor>Status-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="TemporaryCredentialsReceived">
+            <anchor>Status-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Granted">
+            <anchor>Status-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RefreshingToken">
+            <anchor>Status-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>Stage</name>
+            <anchor>Stage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RequestingTemporaryCredentials">
+            <anchor>Stage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RequestingAuthorization">
+            <anchor>Stage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="RequestingAccessToken">
+            <anchor>Stage-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>Error</name>
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NoError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="NetworkError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="ServerError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OAuthTokenNotFoundError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OAuthTokenSecretNotFoundError">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="OAuthCallbackNotVerified">
+            <anchor>Error-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="typedef" type="">
+            <name>ModifyParametersFunction</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>ModifyParametersFunction-typedef</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QAbstractOAuth</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>dtor.QAbstractOAuth</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QString</type>
+            <name>clientIdentifier</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>clientIdentifier</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setClientIdentifier</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setClientIdentifier</anchor>
+            <arglist>(const QString &amp;clientIdentifier) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QString</type>
+            <name>token</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>token</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>setToken</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setToken</anchor>
+            <arglist>(const QString &amp;token) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QNetworkAccessManager *</type>
+            <name>networkAccessManager</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>networkAccessManager</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setNetworkAccessManager</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setNetworkAccessManager</anchor>
+            <arglist>(QNetworkAccessManager *networkAccessManager)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>Status</type>
+            <name>status</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>status</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QUrl</type>
+            <name>authorizationUrl</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>authorizationUrl</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setAuthorizationUrl</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setAuthorizationUrl</anchor>
+            <arglist>(const QUrl &amp;url)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVariantMap</type>
+            <name>extraTokens</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>extraTokens</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QAbstractOAuthReplyHandler *</type>
+            <name>replyHandler</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>replyHandler</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setReplyHandler</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setReplyHandler</anchor>
+            <arglist>(QAbstractOAuthReplyHandler *handler)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QNetworkReply *</type>
+            <name>head</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>head</anchor>
+            <arglist>(const QUrl &amp;url, const QVariantMap &amp;parameters) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QNetworkReply *</type>
+            <name>get</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>get</anchor>
+            <arglist>(const QUrl &amp;url, const QVariantMap &amp;parameters) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QNetworkReply *</type>
+            <name>post</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>post</anchor>
+            <arglist>(const QUrl &amp;url, const QVariantMap &amp;parameters) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QNetworkReply *</type>
+            <name>deleteResource</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>deleteResource</anchor>
+            <arglist>(const QUrl &amp;url, const QVariantMap &amp;parameters) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>ModifyParametersFunction</type>
+            <name>modifyParametersFunction</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>modifyParametersFunction</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setModifyParametersFunction</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setModifyParametersFunction</anchor>
+            <arglist>(const ModifyParametersFunction &amp;modifyParametersFunction)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>grant</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>grant</anchor>
+            <arglist>() = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clientIdentifierChanged</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>clientIdentifierChanged</anchor>
+            <arglist>(const QString &amp;clientIdentifier)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>tokenChanged</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>tokenChanged</anchor>
+            <arglist>(const QString &amp;token)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>statusChanged</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>status-prop</anchor>
+            <arglist>(Status status)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>authorizationUrlChanged</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>authorizationUrl-prop</anchor>
+            <arglist>(const QUrl &amp;url)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>extraTokensChanged</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>extraTokens-prop</anchor>
+            <arglist>(const QVariantMap &amp;tokens)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>requestFailed</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>requestFailed</anchor>
+            <arglist>(const Error error)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>authorizeWithBrowser</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>authorizeWithBrowser</anchor>
+            <arglist>(const QUrl &amp;url)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>granted</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>granted</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>finished</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>finished</anchor>
+            <arglist>(QNetworkReply *reply)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>replyDataReceived</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>replyDataReceived</anchor>
+            <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractOAuth</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>QAbstractOAuth</anchor>
+            <arglist>(QAbstractOAuthPrivate &amp;, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>void</type>
+            <name>setStatus</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>setStatus</anchor>
+            <arglist>(Status status)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type>QString</type>
+            <name>callback</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>callback</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="virtual" static="no">
+            <type>virtual void</type>
+            <name>resourceOwnerAuthorization</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>resourceOwnerAuthorization</anchor>
+            <arglist>(const QUrl &amp;url, const QVariantMap &amp;parameters)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="yes">
+            <type>QByteArray</type>
+            <name>generateRandomString</name>
+            <anchorfile>qabstractoauth.html</anchorfile>
+            <anchor>generateRandomString</anchor>
+            <arglist>(quint8 length)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QAbstractOAuth2</name>
+        <filename>qabstractoauth2.html</filename>
+        <base>QAbstractOAuth</base>
+        <member kind="property" type="QString">
+            <name>scope</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>scope-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>userAgent</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>userAgent-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>clientIdentifier</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>clientIdentifier-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>clientIdentifierSharedKey</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>clientIdentifierSharedKey-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QString">
+            <name>state</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QDateTime">
+            <name>expiration</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>expiration-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractOAuth2</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>QAbstractOAuth2</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractOAuth2</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>QAbstractOAuth2-1</anchor>
+            <arglist>(QNetworkAccessManager *manager, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>~QAbstractOAuth2</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>dtor.QAbstractOAuth2</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QUrl</type>
+            <name>createAuthenticatedUrl</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>createAuthenticatedUrl</anchor>
+            <arglist>(const QUrl &amp;url, const QVariantMap &amp;parameters)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>scope</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>scope-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setScope</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>scope-prop</anchor>
+            <arglist>(const QString &amp;scope)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>userAgent</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>userAgent-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setUserAgent</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>userAgent-prop</anchor>
+            <arglist>(const QString &amp;userAgent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QString</type>
+            <name>responseType</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>responseType</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>clientIdentifierSharedKey</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>clientIdentifierSharedKey-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setClientIdentifierSharedKey</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>clientIdentifierSharedKey-prop</anchor>
+            <arglist>(const QString &amp;clientIdentifierSharedKey)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QString</type>
+            <name>state</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setState</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>(const QString &amp;state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QDateTime</type>
+            <name>expirationAt</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>expiration-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>scopeChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>scope-prop</anchor>
+            <arglist>(const QString &amp;scope)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>userAgentChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>userAgent-prop</anchor>
+            <arglist>(const QString &amp;userAgent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clientIdentifierChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>clientIdentifier-prop</anchor>
+            <arglist>(const QString &amp;clientIdentifier)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>clientIdentifierSharedKeyChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>clientIdentifierSharedKey-prop</anchor>
+            <arglist>(const QString &amp;clientIdentifierSharedKey)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stateChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>(const QString &amp;state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>expirationAtChanged</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>expiration-prop</anchor>
+            <arglist>(const QDateTime &amp;expiration)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>error</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>error</anchor>
+            <arglist>(const QString &amp;error, const QString &amp;errorDescription, const QUrl &amp;uri)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>authorizationCallbackReceived</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>authorizationCallbackReceived</anchor>
+            <arglist>(const QVariantMap &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractOAuth2</name>
+            <anchorfile>qabstractoauth2.html</anchorfile>
+            <anchor>QAbstractOAuth2-2</anchor>
+            <arglist>(QAbstractOAuth2Private &amp;, QObject *parent)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QAbstractOAuthReplyHandler</name>
+        <filename>qabstractoauthreplyhandler.html</filename>
+        <base>QObject</base>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractOAuthReplyHandler</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>QAbstractOAuthReplyHandler</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QAbstractOAuthReplyHandler</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>dtor.QAbstractOAuthReplyHandler</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual QString</type>
+            <name>callback</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>callback</anchor>
+            <arglist>() const = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="pure" static="no">
+            <type>virtual void</type>
+            <name>networkReplyFinished</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>networkReplyFinished</anchor>
+            <arglist>(QNetworkReply *reply) = 0</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>callbackReceived</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>callbackReceived</anchor>
+            <arglist>(const QVariantMap &amp;values)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>tokensReceived</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>tokensReceived</anchor>
+            <arglist>(const QVariantMap &amp;tokens)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>replyDataReceived</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>replyDataReceived</anchor>
+            <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>callbackDataReceived</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>callbackDataReceived</anchor>
+            <arglist>(const QByteArray &amp;data)</arglist>
+        </member>
+        <member kind="function" protection="protected" virtualness="non" static="no">
+            <type></type>
+            <name>QAbstractOAuthReplyHandler</name>
+            <anchorfile>qabstractoauthreplyhandler.html</anchorfile>
+            <anchor>QAbstractOAuthReplyHandler-1</anchor>
+            <arglist>(QObjectPrivate &amp;d, QObject *parent)</arglist>
+        </member>
+    </compound>
+</tagfile>

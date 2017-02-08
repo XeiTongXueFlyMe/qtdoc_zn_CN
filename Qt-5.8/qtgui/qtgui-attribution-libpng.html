@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- codeattributions.qdoc -->
+  <title>LibPNG | Qt GUI 5.8</title>
+  <link rel="stylesheet" type="text/css" href="style/offline-simple.css" />
+  <script type="text/javascript">
+    window.onload = function(){document.getElementsByTagName("link").item(0).setAttribute("href", "style/offline.css");};
+  </script>
+</head>
+<body>
+<div class="header" id="qtdocheader">
+  <div class="main">
+    <div class="main-rounded">
+      <div class="navigationbar">
+        <table><tr>
+<td ><a href="../qtdoc/supported-platforms-and-configurations.html#qt-5-8">Qt 5.8</a></td><td ><a href="qtgui-index.html">Qt GUI</a></td><td >LibPNG</td></tr></table><table class="buildversion"><tr>
+<td id="buildversion" width="100%" align="right">Qt 5.8.0 Reference Documentation</td>
+        </tr></table>
+      </div>
+    </div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<p class="naviNextPrevious headerNavi">
+</p><p/>
+<div class="sidebar"><div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">LibPNG</h1>
+<span class="subtitle"></span>
+<!-- $$$qtgui-attribution-libpng.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="libpng"></a><p>libpng is the official PNG reference library.</p>
+<p>Used in the qpng image plugin. Configure with -system-png or -no-png to avoid.</p>
+<p>The sources can be found in qtbase/src/3rdparty/libpng.</p>
+<p><a href="http://www.libpng.org/pub/png/libpng.html">Project Homepage</a></p>
+<pre class="cpp plain">
+
+  Copyright (c) 1998-2015 Glenn Randers-Pehrson
+  Copyright (c) 1996-1997 Andreas Dilger
+  Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+
+</pre>
+<p><a href="https://spdx.org/licenses/Libpng.html">libpng License</a>.</p>
+<pre class="cpp plain">
+
+  This copy of the libpng notices is provided for your convenience.  In case of
+  any discrepancy between this copy and the notices in the file png.h that is
+  included in the libpng distribution, the latter shall prevail.
+
+  COPYRIGHT NOTICE, DISCLAIMER, and LICENSE:
+
+  If you modify libpng you may insert additional notices immediately following
+  this sentence.
+
+  This code is released under the libpng license.
+
+  libpng versions 1.0&#x2e;7, July 1, 2000, through 1.6&#x2e;20, December 3, 2015, are
+  Copyright (c) 2000-2002, 2004, 2006-2015 Glenn Randers-Pehrson, are
+  derived from libpng-1.0&#x2e;6, and are distributed according to the same
+  disclaimer and license as libpng-1.0&#x2e;6 with the following individuals
+  added to the list of Contributing Authors:
+
+     Simon-Pierre Cadieux
+     Eric S. Raymond
+     Mans Rullgard
+     Cosmin Truta
+     Gilles Vollant
+     James Yu
+
+  and with the following additions to the disclaimer:
+
+     There is no warranty against interference with your enjoyment of the
+     library or against infringement.  There is no warranty that our
+     efforts or the library will fulfill any of your particular purposes
+     or needs.  This library is provided with all faults, and the entire
+     risk of satisfactory quality, performance, accuracy, and effort is with
+     the user.
+
+  libpng versions 0.97, January 1998, through 1.0&#x2e;6, March 20, 2000, are
+  Copyright (c) 1998-2000 Glenn Randers-Pehrson, are derived from
+  libpng-0.96, and are distributed according to the same disclaimer and
+  license as libpng-0.96, with the following individuals added to the list
+  of Contributing Authors:
+
+     Tom Lane
+     Glenn Randers-Pehrson
+     Willem van Schaik
+
+  libpng versions 0.89, June 1996, through 0.96, May 1997, are
+  Copyright (c) 1996-1997 Andreas Dilger, are derived from libpng-0.88,
+  and are distributed according to the same disclaimer and license as
+  libpng-0.88, with the following individuals added to the list of
+  Contributing Authors:
+
+     John Bowler
+     Kevin Bracey
+     Sam Bushell
+     Magnus Holmgren
+     Greg Roelofs
+     Tom Tanner
+
+  libpng versions 0.5, May 1995, through 0.88, January 1996, are
+  Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+
+  For the purposes of this copyright and license, &quot;Contributing Authors&quot;
+  is defined as the following set of individuals:
+
+     Andreas Dilger
+     Dave Martindale
+     Guy Eric Schalnat
+     Paul Schmidt
+     Tim Wegner
+
+  The PNG Reference Library is supplied &quot;AS IS&quot;.  The Contributing Authors
+  and Group 42, Inc. disclaim all warranties, expressed or implied,
+  including, without limitation, the warranties of merchantability and of
+  fitness for any purpose.  The Contributing Authors and Group 42, Inc.
+  assume no liability for direct, indirect, incidental, special, exemplary,
+  or consequential damages, which may result from the use of the PNG
+  Reference Library, even if advised of the possibility of such damage.
+
+  Permission is hereby granted to use, copy, modify, and distribute this
+  source code, or portions hereof, for any purpose, without fee, subject
+  to the following restrictions:
+
+    1. The origin of this source code must not be misrepresented.
+
+    2. Altered versions must be plainly marked as such and must not
+       be misrepresented as being the original source.
+
+    3. This Copyright notice may not be removed or altered from any
+       source or altered source distribution.
+
+  The Contributing Authors and Group 42, Inc. specifically permit, without
+  fee, and encourage the use of this source code as a component to
+  supporting the PNG file format in commercial products.  If you use this
+  source code in a product, acknowledgment is not required but would be
+  appreciated.
+
+  END OF COPYRIGHT NOTICE, DISCLAIMER, and LICENSE.
+
+  A &quot;png_get_copyright&quot; function is available, for convenient use in &quot;about&quot;
+  boxes and the like:
+
+     printf(&quot;%s&quot;, png_get_copyright(NULL));
+
+  Also, the PNG logo (in PNG format, of course) is supplied in the
+  files &quot;pngbar.png&quot; and &quot;pngbar.jpg (88x31) and &quot;pngnow.png&quot; (98x31).
+
+  Libpng is OSI Certified Open Source Software.  OSI Certified Open Source is
+  a certification mark of the Open Source Initiative. OSI has not addressed
+  the additional disclaimers inserted at version 1.0&#x2e;7&#x2e;
+
+  Glenn Randers-Pehrson
+  glennrp at users.sourceforge.net
+  December 3, 2015
+
+</pre>
+</div>
+<!-- @@@qtgui-attribution-libpng.html -->
+<p class="naviNextPrevious footerNavi">
+</p>
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+   <p>
+   <acronym title="Copyright">&copy;</acronym> 2016 The Qt Company Ltd.
+   Documentation contributions included herein are the copyrights of
+   their respective owners.<br>    The documentation provided herein is licensed under the terms of the    <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation    License version 1.3</a> as published by the Free Software Foundation.<br>    Qt and respective logos are trademarks of The Qt Company Ltd.     in Finland and/or other countries worldwide. All other trademarks are property
+   of their respective owners. </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- flite_legal.qdoc -->
+  <title>Flite Library | Qt Speech 5.8</title>
+  <link rel="stylesheet" type="text/css" href="style/offline-simple.css" />
+  <script type="text/javascript">
+    window.onload = function(){document.getElementsByTagName("link").item(0).setAttribute("href", "style/offline.css");};
+  </script>
+</head>
+<body>
+<div class="header" id="qtdocheader">
+  <div class="main">
+    <div class="main-rounded">
+      <div class="navigationbar">
+        <table><tr>
+<td ><a href="../qtdoc/supported-platforms-and-configurations.html#qt-5-8">Qt 5.8</a></td><td ><a href="qtspeech-index.html">Qt Speech</a></td><td >Flite Library</td></tr></table><table class="buildversion"><tr>
+<td id="buildversion" width="100%" align="right">Qt 5.8.0 Reference Documentation</td>
+        </tr></table>
+      </div>
+    </div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="sidebar"><div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Flite Library</h1>
+<span class="subtitle"></span>
+<!-- $$$legal-flite.html-description -->
+<div class="descr"> <a name="details"></a>
+<div class="LegaleseLeft"><pre class="cpp">
+
+  Flite is free software<span class="operator">.</span>
+
+  We have kept the core code to BSD<span class="operator">-</span>like copyright<span class="operator">,</span> thus the system is
+  free to use in commercial products<span class="operator">,</span> with commercial extensions<span class="operator">.</span>  GPL
+  code is only included as part of the build process and does <span class="keyword">not</span>
+  taint any of the run<span class="operator">-</span>time code<span class="operator">.</span>
+
+  As a collection it is distributed under the following license<span class="operator">.</span>  Note
+  a few files in <span class="keyword">this</span> distribution have a different but equally free
+  non<span class="operator">-</span>conflicting license<span class="operator">,</span> see below<span class="operator">.</span>
+
+                    Language Technologies Institute
+                       Carnegie Mellon University
+                        Copyright (c) <span class="number">1999</span><span class="operator">-</span><span class="number">2014</span>
+                          All Rights Reserved<span class="operator">.</span>
+
+    Permission is hereby granted<span class="operator">,</span> free of charge<span class="operator">,</span> to use and distribute
+    <span class="keyword">this</span> software and its documentation without restriction<span class="operator">,</span> including
+    without limitation the rights to use<span class="operator">,</span> copy<span class="operator">,</span> modify<span class="operator">,</span> merge<span class="operator">,</span> publish<span class="operator">,</span>
+    distribute<span class="operator">,</span> sublicense<span class="operator">,</span> and<span class="operator">/</span><span class="keyword">or</span> sell copies of <span class="keyword">this</span> work<span class="operator">,</span> and to
+    permit persons to whom <span class="keyword">this</span> work is furnished to <span class="keyword">do</span> so<span class="operator">,</span> subject to
+    the following conditions:
+     <span class="number">1.</span> The code must retain the above copyright notice<span class="operator">,</span> <span class="keyword">this</span> list of
+        conditions and the following disclaimer<span class="operator">.</span>
+     <span class="number">2.</span> Any modifications must be clearly marked as such<span class="operator">.</span>
+     <span class="number">3.</span> Original authors<span class="char">' names are not deleted.
+     4. The authors'</span> names are <span class="keyword">not</span> used to endorse <span class="keyword">or</span> promote products
+        derived from <span class="keyword">this</span> software without specific prior written
+        permission<span class="operator">.</span>
+
+    CARNEGIE MELLON UNIVERSITY AND THE CONTRIBUTORS TO THIS WORK
+    DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE<span class="operator">,</span> INCLUDING
+    ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS<span class="operator">,</span> IN NO EVENT
+    SHALL CARNEGIE MELLON UNIVERSITY NOR THE CONTRIBUTORS BE LIABLE
+    FOR ANY SPECIAL<span class="operator">,</span> INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE<span class="operator">,</span> DATA OR PROFITS<span class="operator">,</span> WHETHER IN
+    AN ACTION OF CONTRACT<span class="operator">,</span> NEGLIGENCE OR OTHER TORTIOUS ACTION<span class="operator">,</span>
+    ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+    THIS SOFTWARE<span class="operator">.</span>
+
+  All files within <span class="keyword">this</span> distribution have the above license except
+  the following
+
+  src<span class="operator">/</span>cg<span class="operator">/</span>cst_mlpg<span class="operator">.</span>h
+  src<span class="operator">/</span>cg<span class="operator">/</span>cst_mlpg<span class="operator">.</span>c
+  src<span class="operator">/</span>cg<span class="operator">/</span>cst_mlsa<span class="operator">.</span>h
+  src<span class="operator">/</span>cg<span class="operator">/</span>cst_mlsa<span class="operator">.</span>c
+  src<span class="operator">/</span>cg<span class="operator">/</span>cst_vc<span class="operator">.</span>h
+  src<span class="operator">/</span>cg<span class="operator">/</span>cst_vc<span class="operator">.</span>c
+  <span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span>
+  <span class="operator">*</span>                                                                   <span class="operator">*</span>
+  <span class="operator">*</span>            Nagoya Institute of Technology<span class="operator">,</span> Aichi<span class="operator">,</span> Japan<span class="operator">,</span>          <span class="operator">*</span>
+  <span class="operator">*</span>       Nara Institute of Science and Technology<span class="operator">,</span> Nara<span class="operator">,</span> Japan       <span class="operator">*</span>
+  <span class="operator">*</span>                                and                                <span class="operator">*</span>
+  <span class="operator">*</span>             Carnegie Mellon University<span class="operator">,</span> Pittsburgh<span class="operator">,</span> PA            <span class="operator">*</span>
+  <span class="operator">*</span>                      Copyright (c) <span class="number">2003</span><span class="operator">-</span><span class="number">2004</span>                      <span class="operator">*</span>
+  <span class="operator">*</span>                        All Rights Reserved<span class="operator">.</span>                       <span class="operator">*</span>
+  <span class="operator">*</span>                                                                   <span class="operator">*</span>
+  <span class="operator">*</span>  Permission is hereby granted<span class="operator">,</span> free of charge<span class="operator">,</span> to use and         <span class="operator">*</span>
+  <span class="operator">*</span>  distribute <span class="keyword">this</span> software and its documentation without           <span class="operator">*</span>
+  <span class="operator">*</span>  restriction<span class="operator">,</span> including without limitation the rights to use<span class="operator">,</span>     <span class="operator">*</span>
+  <span class="operator">*</span>  copy<span class="operator">,</span> modify<span class="operator">,</span> merge<span class="operator">,</span> publish<span class="operator">,</span> distribute<span class="operator">,</span> sublicense<span class="operator">,</span> and<span class="operator">/</span><span class="keyword">or</span>     <span class="operator">*</span>
+  <span class="operator">*</span>  sell copies of <span class="keyword">this</span> work<span class="operator">,</span> and to permit persons to whom <span class="keyword">this</span>     <span class="operator">*</span>
+  <span class="operator">*</span>  work is furnished to <span class="keyword">do</span> so<span class="operator">,</span> subject to the following conditions: <span class="operator">*</span>
+  <span class="operator">*</span>                                                                   <span class="operator">*</span>
+  <span class="operator">*</span>    <span class="number">1.</span> The code must retain the above copyright notice<span class="operator">,</span> <span class="keyword">this</span> list  <span class="operator">*</span>
+  <span class="operator">*</span>       of conditions and the following disclaimer<span class="operator">.</span>                 <span class="operator">*</span>
+  <span class="operator">*</span>    <span class="number">2.</span> Any modifications must be clearly marked as such<span class="operator">.</span>           <span class="operator">*</span>
+  <span class="operator">*</span>    <span class="number">3.</span> Original authors<span class="char">' names are not deleted.                    *
+  *                                                                   *
+  *  NAGOYA INSTITUTE OF TECHNOLOGY, NARA INSTITUTE OF SCIENCE AND    *
+  *  TECHNOLOGY, CARNEGIE MELLON UNIVERSITY, AND THE CONTRIBUTORS TO  *
+  *  THIS WORK DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,  *
+  *  INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, *
+  *  IN NO EVENT SHALL NAGOYA INSTITUTE OF TECHNOLOGY, NARA           *
+  *  INSTITUTE OF SCIENCE AND TECHNOLOGY, CARNEGIE MELLON UNIVERSITY, *
+  *  NOR THE CONTRIBUTORS BE LIABLE FOR ANY SPECIAL, INDIRECT OR      *
+  *  CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM   *
+  *  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,  *
+  *  NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN        *
+  *  CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.         *
+  *                                                                   *
+  *********************************************************************
+
+  These functions are derived from the versions in festvox/src/vc/ as
+  modified by Tomoki Toda which in turn contain code derived from
+  NITECH'</span>s HTS system<span class="operator">.</span>  Their copyright has the same freedoms as
+  as Flite<span class="char">'s but under NAIST, NITECH and/or CMU.
+
+  src/audio/au_wince.c
+  src/utils/cst_file_stdio.c
+  src/utils/cst_mmap_posix.c
+  src/utils/cst_mmap_win32.c
+  src/utils/cst_mmap_none.c
+  src/utils/cst_file_wince.c
+  sapi/
+        are copyright Cepstral, LLC rather than CMU but fall under the same
+        free license as the above, except for the owner. (Note the SAPI stuff
+        probably doesn'</span>t work any more)
+
+  doc<span class="operator">/</span>alice
+     Is the first two chapters of Alice in Wonderland as distributed by the
+     Gutenburg project and is now in the <span class="keyword">public</span> domain
+
+  src<span class="operator">/</span>regex<span class="operator">/</span>regexp<span class="operator">.</span>c
+  src<span class="operator">/</span>regex<span class="operator">/</span>regsub<span class="operator">.</span>c
+
+   <span class="operator">*</span>      Copyright (c) <span class="number">1986</span> by University of Toronto<span class="operator">.</span>
+   <span class="operator">*</span>      Written by Henry Spencer<span class="operator">.</span>  Not derived from licensed software<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span>      Permission is granted to anyone to use <span class="keyword">this</span> software <span class="keyword">for</span> any
+   <span class="operator">*</span>      purpose on any computer system<span class="operator">,</span> and to redistribute it freely<span class="operator">,</span>
+   <span class="operator">*</span>      subject to the following restrictions:
+   <span class="operator">*</span>
+   <span class="operator">*</span>      <span class="number">1.</span> The author is <span class="keyword">not</span> responsible <span class="keyword">for</span> the consequences of use of
+   <span class="operator">*</span>              <span class="keyword">this</span> software<span class="operator">,</span> no matter how awful<span class="operator">,</span> even <span class="keyword">if</span> they arise
+   <span class="operator">*</span>              from defects in it<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span>      <span class="number">2.</span> The origin of <span class="keyword">this</span> software must <span class="keyword">not</span> be misrepresented<span class="operator">,</span> either
+   <span class="operator">*</span>              by <span class="keyword">explicit</span> claim <span class="keyword">or</span> by omission<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span>      <span class="number">3.</span> Altered versions must be plainly marked as such<span class="operator">,</span> and must <span class="keyword">not</span>
+   <span class="operator">*</span>              be misrepresented as being the original software<span class="operator">.</span>
+
+  src<span class="operator">/</span>speech<span class="operator">/</span>rateconv<span class="operator">.</span>c
+
+   <span class="operator">*</span>      Copyright (c) <span class="number">1992</span><span class="operator">,</span> <span class="number">1995</span> by Markus Mummert
+   <span class="operator">*</span>
+   <span class="operator">*</span>      Redistribution and use of <span class="keyword">this</span> software<span class="operator">,</span> modifcation and inclusion
+   <span class="operator">*</span>      into other forms of software are permitted provided that the following
+   <span class="operator">*</span>      conditions are met:
+   <span class="operator">*</span>
+   <span class="operator">*</span>      <span class="number">1.</span> Redistributions of <span class="keyword">this</span> software must retain the above copyright
+   <span class="operator">*</span>         notice<span class="operator">,</span> <span class="keyword">this</span> list of conditions and the following disclaimer<span class="operator">.</span>
+   <span class="operator">*</span>      <span class="number">2.</span> If <span class="keyword">this</span> software is redistributed in a modified condition
+   <span class="operator">*</span>         it must reveal clearly that it has been modified<span class="operator">.</span>
+
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_durz_cart<span class="operator">.</span>c
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_durz_cart<span class="operator">.</span>h
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_int_accent_cart<span class="operator">.</span>c
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_int_accent_cart<span class="operator">.</span>h
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_int_tone_cart<span class="operator">.</span>c
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_int_tone_cart<span class="operator">.</span>h
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_phoneset<span class="operator">.</span>c
+  lang<span class="operator">/</span>usenglish<span class="operator">/</span>us_f0lr<span class="operator">.</span>c
+     These are directly (<span class="keyword">or</span> indirectly) compiled<span class="operator">/</span>derived from files that are
+     part of the Festival Speech Synthesis System (<span class="number">1.4.1</span>)<span class="operator">.</span>  Hence they have
+     a joint copyright CMU<span class="operator">/</span>Edinburgh but with the same free license
+
+  configure
+     <span class="preprocessor"># Copyright (C) 1992, 93, 94, 95, 96 Free Software Foundation, Inc.</span>
+     <span class="preprocessor">#</span>
+     <span class="preprocessor"># This configure script is free software; the Free Software Foundation</span>
+     <span class="preprocessor"># gives unlimited permission to copy, distribute and modify it.</span>
+
+  configure<span class="operator">.</span>sub
+  config<span class="operator">.</span>guess
+  missing
+  install<span class="operator">-</span>sh
+  mkinstalldirs
+     Copyright FSF<span class="operator">,</span> and under the GPL<span class="operator">,</span> these files are only used <span class="keyword">for</span>
+     convenient configuration and are <span class="keyword">not</span> part of the generated binary<span class="operator">,</span>
+     and therefore <span class="keyword">do</span> <span class="keyword">not</span> impose any GPL restrctions on the rest of the
+     system<span class="operator">.</span>  But as they are standard methods <span class="keyword">for</span> configuration they
+     are included<span class="operator">.</span>
+
+  src<span class="operator">/</span>speech<span class="operator">/</span>g72x<span class="operator">.</span>h
+  src<span class="operator">/</span>speech<span class="operator">/</span>g721<span class="operator">.</span>c
+  src<span class="operator">/</span>speech<span class="operator">/</span>g72x<span class="operator">.</span>c
+  src<span class="operator">/</span>speech<span class="operator">/</span>g723_24<span class="operator">.</span>c
+  src<span class="operator">/</span>speech<span class="operator">/</span>g723_40<span class="operator">.</span>c
+
+   <span class="operator">*</span>
+   <span class="operator">*</span> This source code is a product of Sun Microsystems<span class="operator">,</span> Inc<span class="operator">.</span> and is provided
+   <span class="operator">*</span> <span class="keyword">for</span> unrestricted use<span class="operator">.</span>  Users may copy <span class="keyword">or</span> modify <span class="keyword">this</span> source code without
+   <span class="operator">*</span> charge<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span> SUN SOURCE CODE IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING
+   <span class="operator">*</span> THE WARRANTIES OF DESIGN<span class="operator">,</span> MERCHANTIBILITY AND FITNESS FOR A PARTICULAR
+   <span class="operator">*</span> PURPOSE<span class="operator">,</span> OR ARISING FROM A COURSE OF DEALING<span class="operator">,</span> USAGE OR TRADE PRACTICE<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span> Sun source code is provided with no support and without any obligation on
+   <span class="operator">*</span> the part of Sun Microsystems<span class="operator">,</span> Inc<span class="operator">.</span> to assist in its use<span class="operator">,</span> correction<span class="operator">,</span>
+   <span class="operator">*</span> modification <span class="keyword">or</span> enhancement<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span> SUN MICROSYSTEMS<span class="operator">,</span> INC<span class="operator">.</span> SHALL HAVE NO LIABILITY WITH RESPECT TO THE
+   <span class="operator">*</span> INFRINGEMENT OF COPYRIGHTS<span class="operator">,</span> TRADE SECRETS OR ANY PATENTS BY THIS SOFTWARE
+   <span class="operator">*</span> OR ANY PART THEREOF<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span> In no event will Sun Microsystems<span class="operator">,</span> Inc<span class="operator">.</span> be liable <span class="keyword">for</span> any lost revenue
+   <span class="operator">*</span> <span class="keyword">or</span> profits <span class="keyword">or</span> other special<span class="operator">,</span> indirect and consequential damages<span class="operator">,</span> even <span class="keyword">if</span>
+   <span class="operator">*</span> Sun has been advised of the possibility of such damages<span class="operator">.</span>
+   <span class="operator">*</span>
+   <span class="operator">*</span> Sun Microsystems<span class="operator">,</span> Inc<span class="operator">.</span>
+   <span class="operator">*</span> <span class="number">2550</span> Garcia Avenue
+   <span class="operator">*</span> Mountain View<span class="operator">,</span> California  <span class="number">94043</span>
+   <span class="operator">*</span>
+
+  lang<span class="operator">/</span>cmu_grapheme_lex<span class="operator">/</span>grapheme_unitran_tables<span class="operator">.</span>c
+   <span class="operator">*</span> Copyright <span class="number">2008</span><span class="operator">-</span><span class="number">2012</span><span class="operator">,</span> University of Illinois at Urbana<span class="operator">-</span>Champaign          <span class="operator">*</span>
+   <span class="operator">*</span> distributed under the Apache License<span class="operator">,</span> Version (<span class="number">2.0</span>)                      <span class="operator">*</span>
+   <span class="operator">*</span> http:<span class="comment">//www.apache.org/licenses/LICENSE-2.0                               *</span>
+   <span class="operator">*</span> Original table developed by Richard Sproat and Kyoung<span class="operator">-</span>young Kim          <span class="operator">*</span>
+   <span class="operator">*</span> Ported <span class="keyword">for</span> Festvox by Gopala Anumachipalli gopalakr@cs<span class="operator">.</span>cmu<span class="operator">.</span>edu Sep <span class="number">2012</span>  <span class="operator">*</span>
+   <span class="operator">*</span> Then converted to C <span class="keyword">for</span> CMU Flite (cmuflite<span class="operator">.</span>org)                         <span class="operator">*</span>
+
+</pre>
+</div></div>
+<!-- @@@legal-flite.html -->
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+   <p>
+   <acronym title="Copyright">&copy;</acronym> 2016 The Qt Company Ltd.
+   Documentation contributions included herein are the copyrights of
+   their respective owners.<br>    The documentation provided herein is licensed under the terms of the    <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation    License version 1.3</a> as published by the Free Software Foundation.<br>    Qt and respective logos are trademarks of The Qt Company Ltd.     in Finland and/or other countries worldwide. All other trademarks are property
+   of their respective owners. </p>
+</div>
+</body>
+</html>

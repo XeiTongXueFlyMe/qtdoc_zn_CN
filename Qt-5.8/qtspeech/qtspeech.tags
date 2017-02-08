@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tagfile>
+    <compound kind="class">
+        <name>QTextToSpeech</name>
+        <filename>qtexttospeech.html</filename>
+        <base>QObject</base>
+        <member kind="property" type="State">
+            <name>state</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="int">
+            <name>volume</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>volume-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="double">
+            <name>rate</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>rate-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="double">
+            <name>pitch</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>pitch-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QLocale">
+            <name>locale</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>locale-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="property" type="QVoice">
+            <name>voice</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>voice-prop</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="enum">
+            <name>State</name>
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Ready">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Speaking">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="Paused">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member name="BackendError">
+            <anchor>State-enum</anchor>
+            <arglist></arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTextToSpeech</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>QTextToSpeech</anchor>
+            <arglist>(QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type></type>
+            <name>QTextToSpeech</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>QTextToSpeech-1</anchor>
+            <arglist>(const QString &amp;engine, QObject *parent)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>State</type>
+            <name>state</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVector&lt;QLocale&gt;</type>
+            <name>availableLocales</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>availableLocales</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QLocale</type>
+            <name>locale</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>locale-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVoice</type>
+            <name>voice</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>voice-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>QVector&lt;QVoice&gt;</type>
+            <name>availableVoices</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>availableVoices</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>rate</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>rate-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>pitch</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>pitch-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>double</type>
+            <name>volume</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>volume-prop</anchor>
+            <arglist>() const</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="yes">
+            <type>QStringList</type>
+            <name>availableEngines</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>availableEngines</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>say</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>say</anchor>
+            <arglist>(const QString &amp;text)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stop</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>stop</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>pause</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>pause</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>resume</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>resume</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setLocale</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>setLocale</anchor>
+            <arglist>(const QLocale &amp;locale)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setRate</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>rate-prop</anchor>
+            <arglist>(double rate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setPitch</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>pitch-prop</anchor>
+            <arglist>(double pitch)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setVolume</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>volume-prop</anchor>
+            <arglist>(double volume)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>setVoice</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>setVoice</anchor>
+            <arglist>(const QVoice &amp;voice)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>stateChanged</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>state-prop</anchor>
+            <arglist>(QTextToSpeech::State state)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>localeChanged</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>locale-prop</anchor>
+            <arglist>(const QLocale &amp;locale)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>rateChanged</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>rate-prop</anchor>
+            <arglist>(double rate)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>pitchChanged</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>pitch-prop</anchor>
+            <arglist>(double pitch)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>volumeChanged</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>volume-prop</anchor>
+            <arglist>(int volume)</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="non" static="no">
+            <type>void</type>
+            <name>voiceChanged</name>
+            <anchorfile>qtexttospeech.html</anchorfile>
+            <anchor>voice-prop</anchor>
+            <arglist>(const QVoice &amp;voice)</arglist>
+        </member>
+    </compound>
+    <compound kind="class">
+        <name>QTextToSpeechPlugin</name>
+        <filename>qtexttospeechplugin.html</filename>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual </type>
+            <name>~QTextToSpeechPlugin</name>
+            <anchorfile>qtexttospeechplugin.html</anchorfile>
+            <anchor>dtor.QTextToSpeechPlugin</anchor>
+            <arglist>()</arglist>
+        </member>
+        <member kind="function" protection="public" virtualness="virtual" static="no">
+            <type>virtual QTextToSpeechEngine *</type>
+            <name>createTextToSpeechEngine</name>
+            <anchorfile>qtexttospeechplugin.html</anchorfile>
+            <anchor>createTextToSpeechEngine</anchor>
+            <arglist>(const QVariantMap &amp;parameters, QObject *parent, QString *errorString) const</arglist>
+        </member>
+    </compound>
+</tagfile>

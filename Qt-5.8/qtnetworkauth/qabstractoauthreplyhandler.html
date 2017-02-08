@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qabstractoauthreplyhandler.cpp -->
+  <title>QAbstractOAuthReplyHandler Class | Qt Network Authorization 5.8</title>
+  <link rel="stylesheet" type="text/css" href="style/offline-simple.css" />
+  <script type="text/javascript">
+    window.onload = function(){document.getElementsByTagName("link").item(0).setAttribute("href", "style/offline.css");};
+  </script>
+</head>
+<body>
+<div class="header" id="qtdocheader">
+  <div class="main">
+    <div class="main-rounded">
+      <div class="navigationbar">
+        <table><tr>
+<td >Qt Documentation (Technology Preview)</td><td ><a href="qtnetworkauth-index.html">Qt Network Authorization</a></td><td ><a href="qtnetworkauth-module.html">C++ Classes</a></td><td >QAbstractOAuthReplyHandler</td></tr></table><table class="buildversion"><tr>
+<td id="buildversion" width="100%" align="right">Qt 5.8.0 Reference Documentation</td>
+        </tr></table>
+      </div>
+    </div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#public-functions">Public Functions</a></li>
+<li class="level1"><a href="#public-slots">Public Slots</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#protected-functions">Protected Functions</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">QAbstractOAuthReplyHandler Class</h1>
+<!-- $$$QAbstractOAuthReplyHandler-brief -->
+<p>Handles replies to OAuth authentication requests <a href="#details">More...</a></p>
+<!-- @@@QAbstractOAuthReplyHandler -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign">   <span class="preprocessor">#include &lt;QAbstractOAuthReplyHandler&gt;</span>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> qmake:</td><td class="memItemRight bottomAlign"> QT += networkauth</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Qt 5.8</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <a href="../qtcore/qobject.html">QObject</a></td></tr></table></div><ul>
+<li><a href="qabstractoauthreplyhandler-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="public-functions"></a>
+<h2 id="public-functions">Public Functions</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#QAbstractOAuthReplyHandler">QAbstractOAuthReplyHandler</a></b>(QObject *<i>parent</i> = nullptr)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#dtor.QAbstractOAuthReplyHandler">~QAbstractOAuthReplyHandler</a></b>()</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> virtual QString </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#callback">callback</a></b>() const = 0</td></tr>
+</table></div>
+<ul>
+<li class="fn">31 public functions inherited from <a href="../qtcore/qobject.html#public-functions">QObject</a></li>
+</ul>
+<a name="public-slots"></a>
+<h2 id="public-slots">Public Slots</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> virtual void </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#networkReplyFinished">networkReplyFinished</a></b>(QNetworkReply *<i>reply</i>) = 0</td></tr>
+</table></div>
+<ul>
+<li class="fn">1 public slot inherited from <a href="../qtcore/qobject.html#public-slots">QObject</a></li>
+</ul>
+<a name="signals"></a>
+<h2 id="signals">Signals</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#callbackDataReceived">callbackDataReceived</a></b>(const QByteArray &amp;<i>data</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#callbackReceived">callbackReceived</a></b>(const QVariantMap &amp;<i>values</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#replyDataReceived">replyDataReceived</a></b>(const QByteArray &amp;<i>data</i>)</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> void </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#tokensReceived">tokensReceived</a></b>(const QVariantMap &amp;<i>tokens</i>)</td></tr>
+</table></div>
+<ul>
+<li class="fn">2 signals inherited from <a href="../qtcore/qobject.html#signals">QObject</a></li>
+</ul>
+<a name="protected-functions"></a>
+<h2 id="protected-functions">Protected Functions</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> </td><td class="memItemRight bottomAlign"><b><a href="qabstractoauthreplyhandler.html#QAbstractOAuthReplyHandler-1">QAbstractOAuthReplyHandler</a></b>(QObjectPrivate &amp;<i>d</i>, QObject *<i>parent</i> = nullptr)</td></tr>
+</table></div>
+<ul>
+<li class="fn">9 protected functions inherited from <a href="../qtcore/qobject.html#protected-functions">QObject</a></li>
+</ul>
+<h3>Additional Inherited Members</h3>
+<ul>
+<li class="fn">1 property inherited from <a href="../qtcore/qobject.html#properties">QObject</a></li>
+<li class="fn">1 public variable inherited from <a href="../qtcore/qobject.html#public-variables">QObject</a></li>
+<li class="fn">10 static public members inherited from <a href="../qtcore/qobject.html#static-public-members">QObject</a></li>
+<li class="fn">2 protected variables inherited from <a href="../qtcore/qobject.html#protected-variables">QObject</a></li>
+</ul>
+<a name="details"></a>
+<!-- $$$QAbstractOAuthReplyHandler-description -->
+<div class="descr">
+<h2 id="details">Detailed Description</h2>
+<p>Handles replies to OAuth authentication requests</p>
+<p>The <a href="qabstractoauthreplyhandler.html">QAbstractOAuthReplyHandler</a> class handles the answers to all OAuth authentication requests</p>
+</div>
+<!-- @@@QAbstractOAuthReplyHandler -->
+<div class="func">
+<h2>Member Function Documentation</h2>
+<!-- $$$QAbstractOAuthReplyHandler[overload1]$$$QAbstractOAuthReplyHandlerQObject* -->
+<h3 class="fn" id="QAbstractOAuthReplyHandler"><a name="QAbstractOAuthReplyHandler"></a>QAbstractOAuthReplyHandler::<span class="name">QAbstractOAuthReplyHandler</span>(<span class="type"><a href="../qtcore/qobject.html#QObject">QObject</a></span> *<i>parent</i> = nullptr)</h3>
+<p>Default constructs an instance of QAbstractOAuthReplyHandler.</p><!-- @@@QAbstractOAuthReplyHandler -->
+<!-- $$$QAbstractOAuthReplyHandler$$$QAbstractOAuthReplyHandlerQObjectPrivate&QObject* -->
+<h3 class="fn" id="QAbstractOAuthReplyHandler-1"><a name="QAbstractOAuthReplyHandler-1"></a><code>[protected] </code>QAbstractOAuthReplyHandler::<span class="name">QAbstractOAuthReplyHandler</span>(<span class="type"><a href="../qtcore/qobjectprivate.html">QObjectPrivate</a></span> &amp;<i>d</i>, <span class="type"><a href="../qtcore/qobject.html#QObject">QObject</a></span> *<i>parent</i> = nullptr)</h3>
+<p>Default constructs an instance of QAbstractOAuthReplyHandler.</p><!-- @@@QAbstractOAuthReplyHandler -->
+<!-- $$$~QAbstractOAuthReplyHandler[overload1]$$$~QAbstractOAuthReplyHandler -->
+<h3 class="fn" id="dtor.QAbstractOAuthReplyHandler"><a name="dtor.QAbstractOAuthReplyHandler"></a><code>[virtual] </code>QAbstractOAuthReplyHandler::<span class="name">~QAbstractOAuthReplyHandler</span>()</h3>
+<p>Destroys the instance of QAbstractOAuthReplyHandler. The destructor is virtual.</p><!-- @@@~QAbstractOAuthReplyHandler -->
+<!-- $$$callback[overload1]$$$callback -->
+<h3 class="fn" id="callback"><a name="callback"></a><code>[pure virtual] </code><span class="type"><a href="../qtcore/qstring.html">QString</a></span> QAbstractOAuthReplyHandler::<span class="name">callback</span>() const</h3>
+<!-- @@@callback -->
+<!-- $$$callbackDataReceived[overload1]$$$callbackDataReceivedconstQByteArray& -->
+<h3 class="fn" id="callbackDataReceived"><a name="callbackDataReceived"></a><code>[signal] </code><span class="type">void</span> QAbstractOAuthReplyHandler::<span class="name">callbackDataReceived</span>(const <span class="type"><a href="../qtcore/qbytearray.html">QByteArray</a></span> &amp;<i>data</i>)</h3>
+<!-- @@@callbackDataReceived -->
+<!-- $$$callbackReceived[overload1]$$$callbackReceivedconstQVariantMap& -->
+<h3 class="fn" id="callbackReceived"><a name="callbackReceived"></a><code>[signal] </code><span class="type">void</span> QAbstractOAuthReplyHandler::<span class="name">callbackReceived</span>(const <span class="type"><a href="../qtcore/qvariant.html#QVariantMap-typedef">QVariantMap</a></span> &amp;<i>values</i>)</h3>
+<!-- @@@callbackReceived -->
+<!-- $$$networkReplyFinished[overload1]$$$networkReplyFinishedQNetworkReply* -->
+<h3 class="fn" id="networkReplyFinished"><a name="networkReplyFinished"></a><code>[pure virtual slot] </code><span class="type">void</span> QAbstractOAuthReplyHandler::<span class="name">networkReplyFinished</span>(<span class="type"><a href="../qtnetwork/qnetworkreply.html">QNetworkReply</a></span> *<i>reply</i>)</h3>
+<!-- @@@networkReplyFinished -->
+<!-- $$$replyDataReceived[overload1]$$$replyDataReceivedconstQByteArray& -->
+<h3 class="fn" id="replyDataReceived"><a name="replyDataReceived"></a><code>[signal] </code><span class="type">void</span> QAbstractOAuthReplyHandler::<span class="name">replyDataReceived</span>(const <span class="type"><a href="../qtcore/qbytearray.html">QByteArray</a></span> &amp;<i>data</i>)</h3>
+<!-- @@@replyDataReceived -->
+<!-- $$$tokensReceived[overload1]$$$tokensReceivedconstQVariantMap& -->
+<h3 class="fn" id="tokensReceived"><a name="tokensReceived"></a><code>[signal] </code><span class="type">void</span> QAbstractOAuthReplyHandler::<span class="name">tokensReceived</span>(const <span class="type"><a href="../qtcore/qvariant.html#QVariantMap-typedef">QVariantMap</a></span> &amp;<i>tokens</i>)</h3>
+<!-- @@@tokensReceived -->
+</div>
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+   <p>
+   <acronym title="Copyright">&copy;</acronym> 2016 The Qt Company Ltd.
+   Documentation contributions included herein are the copyrights of
+   their respective owners.<br>    The documentation provided herein is licensed under the terms of the    <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation    License version 1.3</a> as published by the Free Software Foundation.<br>    Qt and respective logos are trademarks of The Qt Company Ltd.     in Finland and/or other countries worldwide. All other trademarks are property
+   of their respective owners. </p>
+</div>
+</body>
+</html>

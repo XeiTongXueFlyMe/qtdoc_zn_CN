@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>org.qt-project.qtnetworkauth.580</namespace>
+    <virtualFolder>qtnetworkauth</virtualFolder>
+    <customFilter name="QtNetworkAuthorization 5.8.0">
+        <filterAttribute>5.8.0</filterAttribute>
+        <filterAttribute>qtnetworkauth</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>5.8.0</filterAttribute>
+        <filterAttribute>qtnetworkauth</filterAttribute>
+        <filterAttribute>qtrefdoc</filterAttribute>
+        <toc>
+            <section ref="qtnetworkauth-index.html" title="Qt Network Authorization">
+                <section ref="qtnetworkauth-module.html" title="C++ Classes">
+                    <section ref="qabstractoauth.html" title="QAbstractOAuth Class Reference">
+                        <section ref="qabstractoauth-members.html" title="List of all members"/>
+                    </section>
+                    <section ref="qabstractoauth2.html" title="QAbstractOAuth2 Class Reference">
+                        <section ref="qabstractoauth2-members.html" title="List of all members"/>
+                    </section>
+                    <section ref="qabstractoauthreplyhandler.html" title="QAbstractOAuthReplyHandler Class Reference">
+                        <section ref="qabstractoauthreplyhandler-members.html" title="List of all members"/>
+                    </section>
+                </section>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="QAbstractOAuth" id="QAbstractOAuth" ref="qabstractoauth.html"/>
+            <keyword name="QAbstractOAuth2" id="QAbstractOAuth2" ref="qabstractoauth2.html"/>
+            <keyword name="QAbstractOAuth::Error" id="QAbstractOAuth::Error" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::Granted" id="QAbstractOAuth::Granted" ref="qabstractoauth.html#Status-enum"/>
+            <keyword name="QAbstractOAuth::ModifyParametersFunction" id="QAbstractOAuth::ModifyParametersFunction" ref="qabstractoauth.html#ModifyParametersFunction-typedef"/>
+            <keyword name="QAbstractOAuth::NetworkError" id="QAbstractOAuth::NetworkError" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::NoError" id="QAbstractOAuth::NoError" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::NotAuthenticated" id="QAbstractOAuth::NotAuthenticated" ref="qabstractoauth.html#Status-enum"/>
+            <keyword name="QAbstractOAuth::OAuthCallbackNotVerified" id="QAbstractOAuth::OAuthCallbackNotVerified" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::OAuthTokenNotFoundError" id="QAbstractOAuth::OAuthTokenNotFoundError" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::OAuthTokenSecretNotFoundError" id="QAbstractOAuth::OAuthTokenSecretNotFoundError" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::RefreshingToken" id="QAbstractOAuth::RefreshingToken" ref="qabstractoauth.html#Status-enum"/>
+            <keyword name="QAbstractOAuth::RequestingAccessToken" id="QAbstractOAuth::RequestingAccessToken" ref="qabstractoauth.html#Stage-enum"/>
+            <keyword name="QAbstractOAuth::RequestingAuthorization" id="QAbstractOAuth::RequestingAuthorization" ref="qabstractoauth.html#Stage-enum"/>
+            <keyword name="QAbstractOAuth::RequestingTemporaryCredentials" id="QAbstractOAuth::RequestingTemporaryCredentials" ref="qabstractoauth.html#Stage-enum"/>
+            <keyword name="QAbstractOAuth::ServerError" id="QAbstractOAuth::ServerError" ref="qabstractoauth.html#Error-enum"/>
+            <keyword name="QAbstractOAuth::Stage" id="QAbstractOAuth::Stage" ref="qabstractoauth.html#Stage-enum"/>
+            <keyword name="QAbstractOAuth::Status" id="QAbstractOAuth::Status" ref="qabstractoauth.html#Status-enum"/>
+            <keyword name="QAbstractOAuth::TemporaryCredentialsReceived" id="QAbstractOAuth::TemporaryCredentialsReceived" ref="qabstractoauth.html#Status-enum"/>
+            <keyword name="QAbstractOAuthReplyHandler" id="QAbstractOAuthReplyHandler" ref="qabstractoauthreplyhandler.html"/>
+            <keyword name="Qt Network Authorization" id="Qt Network Authorization" ref="qtnetworkauth-index.html"/>
+            <keyword name="QtNetworkAuth" id="QtNetworkAuth" ref="qtnetworkauth-module.html"/>
+            <keyword name="Reddit Example" id="Reddit Example" ref="qtnetworkauth-redditclient-example.html"/>
+            <keyword name="Twitter Timeline Example" id="Twitter Timeline Example" ref="qtnetworkauth-twittertimeline-example.html"/>
+            <keyword name="authorizationCallbackReceived" id="QAbstractOAuth2::authorizationCallbackReceived" ref="qabstractoauth2.html#authorizationCallbackReceived"/>
+            <keyword name="authorizationUrl" id="QAbstractOAuth::authorizationUrl" ref="qabstractoauth.html#authorizationUrl"/>
+            <keyword name="authorizationUrl" id="QAbstractOAuth::authorizationUrl" ref="qabstractoauth.html#authorizationUrl-prop"/>
+            <keyword name="authorizationUrlChanged" id="QAbstractOAuth::authorizationUrlChanged" ref="qabstractoauth.html#authorizationUrl-prop"/>
+            <keyword name="authorizeWithBrowser" id="QAbstractOAuth::authorizeWithBrowser" ref="qabstractoauth.html#authorizeWithBrowser"/>
+            <keyword name="callback" id="QAbstractOAuth::callback" ref="qabstractoauth.html#callback"/>
+            <keyword name="callback" id="QAbstractOAuthReplyHandler::callback" ref="qabstractoauthreplyhandler.html#callback"/>
+            <keyword name="callbackDataReceived" id="QAbstractOAuthReplyHandler::callbackDataReceived" ref="qabstractoauthreplyhandler.html#callbackDataReceived"/>
+            <keyword name="callbackReceived" id="QAbstractOAuthReplyHandler::callbackReceived" ref="qabstractoauthreplyhandler.html#callbackReceived"/>
+            <keyword name="clientIdentifier" id="QAbstractOAuth2::clientIdentifier" ref="qabstractoauth2.html#clientIdentifier-prop"/>
+            <keyword name="clientIdentifier" id="QAbstractOAuth::clientIdentifier" ref="qabstractoauth.html#clientIdentifier"/>
+            <keyword name="clientIdentifierChanged" id="QAbstractOAuth2::clientIdentifierChanged" ref="qabstractoauth2.html#clientIdentifier-prop"/>
+            <keyword name="clientIdentifierChanged" id="QAbstractOAuth::clientIdentifierChanged" ref="qabstractoauth.html#clientIdentifierChanged"/>
+            <keyword name="clientIdentifierSharedKey" id="QAbstractOAuth2::clientIdentifierSharedKey" ref="qabstractoauth2.html#clientIdentifierSharedKey-prop"/>
+            <keyword name="clientIdentifierSharedKey" id="QAbstractOAuth2::clientIdentifierSharedKey" ref="qabstractoauth2.html#clientIdentifierSharedKey-prop"/>
+            <keyword name="clientIdentifierSharedKeyChanged" id="QAbstractOAuth2::clientIdentifierSharedKeyChanged" ref="qabstractoauth2.html#clientIdentifierSharedKey-prop"/>
+            <keyword name="createAuthenticatedUrl" id="QAbstractOAuth2::createAuthenticatedUrl" ref="qabstractoauth2.html#createAuthenticatedUrl"/>
+            <keyword name="deleteResource" id="QAbstractOAuth::deleteResource" ref="qabstractoauth.html#deleteResource"/>
+            <keyword name="error" id="QAbstractOAuth2::error" ref="qabstractoauth2.html#error"/>
+            <keyword name="examples-qtnetworkauth" id="examples-qtnetworkauth" ref="examples-qtnetworkauth.html"/>
+            <keyword name="expiration" id="QAbstractOAuth2::expiration" ref="qabstractoauth2.html#expiration-prop"/>
+            <keyword name="expirationAt" id="QAbstractOAuth2::expirationAt" ref="qabstractoauth2.html#expiration-prop"/>
+            <keyword name="expirationAtChanged" id="QAbstractOAuth2::expirationAtChanged" ref="qabstractoauth2.html#expiration-prop"/>
+            <keyword name="extraTokens" id="QAbstractOAuth::extraTokens" ref="qabstractoauth.html#extraTokens"/>
+            <keyword name="extraTokens" id="QAbstractOAuth::extraTokens" ref="qabstractoauth.html#extraTokens-prop"/>
+            <keyword name="extraTokensChanged" id="QAbstractOAuth::extraTokensChanged" ref="qabstractoauth.html#extraTokens-prop"/>
+            <keyword name="finished" id="QAbstractOAuth::finished" ref="qabstractoauth.html#finished"/>
+            <keyword name="generateRandomString" id="QAbstractOAuth::generateRandomString" ref="qabstractoauth.html#generateRandomString"/>
+            <keyword name="get" id="QAbstractOAuth::get" ref="qabstractoauth.html#get"/>
+            <keyword name="grant" id="QAbstractOAuth::grant" ref="qabstractoauth.html#grant"/>
+            <keyword name="granted" id="QAbstractOAuth::granted" ref="qabstractoauth.html#granted"/>
+            <keyword name="head" id="QAbstractOAuth::head" ref="qabstractoauth.html#head"/>
+            <keyword name="modifyParametersFunction" id="QAbstractOAuth::modifyParametersFunction" ref="qabstractoauth.html#modifyParametersFunction"/>
+            <keyword name="networkAccessManager" id="QAbstractOAuth::networkAccessManager" ref="qabstractoauth.html#networkAccessManager"/>
+            <keyword name="networkReplyFinished" id="QAbstractOAuthReplyHandler::networkReplyFinished" ref="qabstractoauthreplyhandler.html#networkReplyFinished"/>
+            <keyword name="post" id="QAbstractOAuth::post" ref="qabstractoauth.html#post"/>
+            <keyword name="replyDataReceived" id="QAbstractOAuth::replyDataReceived" ref="qabstractoauth.html#replyDataReceived"/>
+            <keyword name="replyDataReceived" id="QAbstractOAuthReplyHandler::replyDataReceived" ref="qabstractoauthreplyhandler.html#replyDataReceived"/>
+            <keyword name="replyHandler" id="QAbstractOAuth::replyHandler" ref="qabstractoauth.html#replyHandler"/>
+            <keyword name="requestFailed" id="QAbstractOAuth::requestFailed" ref="qabstractoauth.html#requestFailed"/>
+            <keyword name="resourceOwnerAuthorization" id="QAbstractOAuth::resourceOwnerAuthorization" ref="qabstractoauth.html#resourceOwnerAuthorization"/>
+            <keyword name="responseType" id="QAbstractOAuth2::responseType" ref="qabstractoauth2.html#responseType"/>
+            <keyword name="scope" id="QAbstractOAuth2::scope" ref="qabstractoauth2.html#scope-prop"/>
+            <keyword name="scope" id="QAbstractOAuth2::scope" ref="qabstractoauth2.html#scope-prop"/>
+            <keyword name="scopeChanged" id="QAbstractOAuth2::scopeChanged" ref="qabstractoauth2.html#scope-prop"/>
+            <keyword name="setAuthorizationUrl" id="QAbstractOAuth::setAuthorizationUrl" ref="qabstractoauth.html#setAuthorizationUrl"/>
+            <keyword name="setClientIdentifier" id="QAbstractOAuth::setClientIdentifier" ref="qabstractoauth.html#setClientIdentifier"/>
+            <keyword name="setClientIdentifierSharedKey" id="QAbstractOAuth2::setClientIdentifierSharedKey" ref="qabstractoauth2.html#clientIdentifierSharedKey-prop"/>
+            <keyword name="setModifyParametersFunction" id="QAbstractOAuth::setModifyParametersFunction" ref="qabstractoauth.html#setModifyParametersFunction"/>
+            <keyword name="setNetworkAccessManager" id="QAbstractOAuth::setNetworkAccessManager" ref="qabstractoauth.html#setNetworkAccessManager"/>
+            <keyword name="setReplyHandler" id="QAbstractOAuth::setReplyHandler" ref="qabstractoauth.html#setReplyHandler"/>
+            <keyword name="setScope" id="QAbstractOAuth2::setScope" ref="qabstractoauth2.html#scope-prop"/>
+            <keyword name="setState" id="QAbstractOAuth2::setState" ref="qabstractoauth2.html#state-prop"/>
+            <keyword name="setStatus" id="QAbstractOAuth::setStatus" ref="qabstractoauth.html#setStatus"/>
+            <keyword name="setToken" id="QAbstractOAuth::setToken" ref="qabstractoauth.html#setToken"/>
+            <keyword name="setUserAgent" id="QAbstractOAuth2::setUserAgent" ref="qabstractoauth2.html#userAgent-prop"/>
+            <keyword name="state" id="QAbstractOAuth2::state" ref="qabstractoauth2.html#state-prop"/>
+            <keyword name="state" id="QAbstractOAuth2::state" ref="qabstractoauth2.html#state-prop"/>
+            <keyword name="stateChanged" id="QAbstractOAuth2::stateChanged" ref="qabstractoauth2.html#state-prop"/>
+            <keyword name="status" id="QAbstractOAuth::status" ref="qabstractoauth.html#status"/>
+            <keyword name="status" id="QAbstractOAuth::status" ref="qabstractoauth.html#status-prop"/>
+            <keyword name="statusChanged" id="QAbstractOAuth::statusChanged" ref="qabstractoauth.html#status-prop"/>
+            <keyword name="token" id="QAbstractOAuth::token" ref="qabstractoauth.html#token"/>
+            <keyword name="tokenChanged" id="QAbstractOAuth::tokenChanged" ref="qabstractoauth.html#tokenChanged"/>
+            <keyword name="tokensReceived" id="QAbstractOAuthReplyHandler::tokensReceived" ref="qabstractoauthreplyhandler.html#tokensReceived"/>
+            <keyword name="userAgent" id="QAbstractOAuth2::userAgent" ref="qabstractoauth2.html#userAgent-prop"/>
+            <keyword name="userAgent" id="QAbstractOAuth2::userAgent" ref="qabstractoauth2.html#userAgent-prop"/>
+            <keyword name="userAgentChanged" id="QAbstractOAuth2::userAgentChanged" ref="qabstractoauth2.html#userAgent-prop"/>
+            <keyword name="~QAbstractOAuth" id="QAbstractOAuth::~QAbstractOAuth" ref="qabstractoauth.html#dtor.QAbstractOAuth"/>
+            <keyword name="~QAbstractOAuth2" id="QAbstractOAuth2::~QAbstractOAuth2" ref="qabstractoauth2.html#dtor.QAbstractOAuth2"/>
+            <keyword name="~QAbstractOAuthReplyHandler" id="QAbstractOAuthReplyHandler::~QAbstractOAuthReplyHandler" ref="qabstractoauthreplyhandler.html#dtor.QAbstractOAuthReplyHandler"/>
+        </keywords>
+        <files>
+            <file>examples-qtnetworkauth.html</file>
+            <file>images/arrow_bc.png</file>
+            <file>images/bgrContent.png</file>
+            <file>images/btn_next.png</file>
+            <file>images/btn_prev.png</file>
+            <file>images/bullet_dn.png</file>
+            <file>images/bullet_sq.png</file>
+            <file>images/home.png</file>
+            <file>images/ico_note.png</file>
+            <file>images/ico_note_attention.png</file>
+            <file>images/ico_out.png</file>
+            <file>images/logo.png</file>
+            <file>images/redditclient-example.png</file>
+            <file>images/twittertimeline-example.png</file>
+            <file>qabstractoauth-members.html</file>
+            <file>qabstractoauth.html</file>
+            <file>qabstractoauth2-members.html</file>
+            <file>qabstractoauth2.html</file>
+            <file>qabstractoauthreplyhandler-members.html</file>
+            <file>qabstractoauthreplyhandler.html</file>
+            <file>qtnetworkauth-index.html</file>
+            <file>qtnetworkauth-module.html</file>
+            <file>qtnetworkauth-redditclient-example.html</file>
+            <file>qtnetworkauth-redditclient-main-cpp.html</file>
+            <file>qtnetworkauth-redditclient-redditclient-pro.html</file>
+            <file>qtnetworkauth-redditclient-redditmodel-cpp.html</file>
+            <file>qtnetworkauth-redditclient-redditmodel-h.html</file>
+            <file>qtnetworkauth-redditclient-redditwrapper-cpp.html</file>
+            <file>qtnetworkauth-redditclient-redditwrapper-h.html</file>
+            <file>qtnetworkauth-twittertimeline-example.html</file>
+            <file>qtnetworkauth-twittertimeline-main-cpp.html</file>
+            <file>qtnetworkauth-twittertimeline-twitter-cpp.html</file>
+            <file>qtnetworkauth-twittertimeline-twitter-h.html</file>
+            <file>qtnetworkauth-twittertimeline-twitterdialog-ui.html</file>
+            <file>qtnetworkauth-twittertimeline-twittertimeline-pro.html</file>
+            <file>qtnetworkauth-twittertimeline-twittertimelinemodel-cpp.html</file>
+            <file>qtnetworkauth-twittertimeline-twittertimelinemodel-h.html</file>
+            <file>style/offline-simple.css</file>
+            <file>style/offline.css</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
