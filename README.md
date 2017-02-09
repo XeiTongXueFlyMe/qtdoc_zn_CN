@@ -22,4 +22,8 @@ qt文档中文翻译项目
 qq群：58235799
 
 翻译贡献者：
-胡来顺 hulaishun@163.com
+
+胡来顺 hulaishun@163.com  模块：qmake
+
+张继华 811471107@qq.com  模块：qtdesigner
+
