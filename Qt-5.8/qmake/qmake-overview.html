@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- qmake-manual.qdoc -->
-  <title>Overview | qmake Manual</title>
+  <title>预览 | qmake手册</title>
   <link rel="stylesheet" type="text/css" href="style/offline-simple.css" />
   <script type="text/javascript">
     window.onload = function(){document.getElementsByTagName("link").item(0).setAttribute("href", "style/offline.css");};
@@ -16,8 +16,8 @@
     <div class="main-rounded">
       <div class="navigationbar">
         <table><tr>
-<td ><a href="../qtdoc/supported-platforms-and-configurations.html#qt-5-8">Qt 5.8</a></td><td ><a href="qmake-manual.html">qmake Manual</a></td><td >Overview</td></tr></table><table class="buildversion"><tr>
-<td id="buildversion" width="100%" align="right">Qt 5.8.0 Reference Documentation</td>
+<td ><a href="../qtdoc/supported-platforms-and-configurations.html#qt-5-8">Qt 5.8</a></td><td ><a href="qmake-manual.html">qmake手册</a></td><td >预览</td></tr></table><table class="buildversion"><tr>
+<td id="buildversion" width="100%" align="right">Qt 5.8.0 参考文档</td>
         </tr></table>
       </div>
     </div>
@@ -27,51 +27,54 @@
   <link rel="prev" href="qmake-manual.html" />
   <link rel="next" href="qmake-tutorial.html" />
 <p class="naviNextPrevious headerNavi">
-<a class="prevPage" href="qmake-manual.html">qmake Manual</a>
+<a class="prevPage" href="qmake-manual.html">qmake手册</a>
 <span class="naviSeparator">  &#9702;  </span>
-<a class="nextPage" href="qmake-tutorial.html">Getting Started</a>
+<a class="nextPage" href="qmake-tutorial.html">向导开始</a>
 </p><p/>
 <div class="sidebar">
 <div class="toc">
-<h3><a name="toc">Contents</a></h3>
+<h3><a name="toc">内容</a></h3>
 <ul>
-<li class="level1"><a href="#describing-a-project">Describing a Project</a></li>
-<li class="level1"><a href="#building-a-project">Building a Project</a></li>
-<li class="level1"><a href="#using-third-party-libraries">Using Third Party Libraries</a></li>
-<li class="level1"><a href="#precompiling-headers">Precompiling Headers</a></li>
+<li class="level1"><a href="#describing-a-project">工程描述</a></li>
+<li class="level1"><a href="#building-a-project">工程生成</a></li>
+<li class="level1"><a href="#using-third-party-libraries">使用第三方库</a></li>
+<li class="level1"><a href="#precompiling-headers">预编译头文件</a></li>
 </ul>
 </div>
 <div class="sidebar-content" id="sidebar-content"></div></div>
-<h1 class="title">Overview</h1>
+<h1 class="title">预览</h1>
 <span class="subtitle"></span>
 <!-- $$$qmake-overview.html-description -->
 <div class="descr"> <a name="details"></a>
-<p>The qmake tool provides you with a project-oriented system for managing the build process for applications, libraries, and other components. This approach gives you control over the source files used, and allows each of the steps in the process to be described concisely, typically within a single file. qmake expands the information in each project file to a Makefile that executes the necessary commands for compiling and linking.</p>
+<p>qmake工具提供了面向工程系统，用于管理程序、库和其他组件的生成过程。 该方法帮你控制源文件，在典型的单一文件中，允许简单描述的过程中每一步骤。qmake扩展每个工程文件中的信息到makefile，用于执行执行编译和链接相关的必须命令。</p>
 <a name="describing-a-project"></a>
-<h2 id="describing-a-project">Describing a Project</h2>
-<p>Projects are described by the contents of project (<code>.pro</code>) files. qmake uses the information within the files to generate Makefiles that contain all the commands that are needed to build each project. Project files typically contain a list of source and header files, general configuration information, and any application-specific details, such as a list of extra libraries to link against, or a list of extra include paths to use.</p>
-<p>Project files can contain a number of different elements, including comments, variable declarations, built-in functions, and some simple control structures. In most simple projects, it is only necessary to declare the source and header files that are used to build the project with some basic configuration options. For more information about how to create a simple project file, see <a href="qmake-tutorial.html">Getting Started</a>.</p>
-<p>You can create more sophisticated project files for complex projects. For an overview of project files, see <a href="qmake-project-files.html">Creating Project Files</a>. For detailed information about the variables and functions that you can use in project files, see <a href="qmake-reference.html">Reference</a>.</p>
-<p>You can use application or library project templates to specify specialized configuration options to fine tune the build process. For more information, see <a href="qmake-common-projects.html">Building Common Project Types</a>.</p>
-<p>You can use the <a href="http://doc.qt.io/qtcreator/creator-project-creating.html">Qt Creator new project wizard</a> to create the project file. You choose the project template, and Qt Creator creates a project file with default values that enable you to build and run the project. You can modify the project file to suit your purposes.</p>
-<p>You can also use qmake to generate project files. For a full description of qmake command line options, see <a href="qmake-running.html">Running qmake</a>.</p>
-<p>The basic configuration features of qmake can handle most cross-platform projects. However, it might be useful, or even necessary, to use some platform-specific variables. For more information, see <a href="qmake-platform-notes.html">Platform Notes</a>.</p>
+<h2 id="describing-a-project">工程描述</h2>
+<p>根据(<code>.pro</code>)文件内容描述的工程，qmake依据文件内容生成makefile，将包含生成每一工程必须的所有命令。
+典型工程文件包括源文件和头文件列表，通用配置信息，以及任何程序指定的详情细节。例如：链接需要的外部库列表或者外部包含路径列表。</p>
+<p>工程文件也会包含不同元素数字，包含注释，变量声明，內建函数和一些简单控制结构。在绝大多数简单工程中，一般仅仅需要声明源文件和头文件，根据一些基层配置选项用于生成工程。更多关于如何创建简单工程文件，请见<a href="qmake-tutorial.html">向导开始</a>.</p>
+<p>你也可以创建更加复杂的工程，预览工程文件，请看<a href="qmake-project-files.html">创建工程文件</a>. 更多工程文件中的变量和函数的详情，请看 <a href="qmake-reference.html">参考</a>.</p>
+<p>你可以使用工程或库工程模板，来指明特定的配置选项，最终都将转到生成过程。更多信息，请看<a href="qmake-common-projects.html">生成通用工程类型</a>.</p>
+<p>你可以使用<a href="http://doc.qt.io/qtcreator/creator-project-creating.html">Qt Creator新建工程向导</a>来创建工程文件。 
+先选择工程模板，Qt Creator将依据模板默认值创建工程文件，你就可以生成并运行新建好的工程。为了达到你的要求，你可以修改工程文件。</p>
+<p>你可以使用qmake命令生成工程文件。更全的qmake命令行选项，请看 <a href="qmake-running.html">运行qmake</a>.</p>
+<p>qmake基础配置特性可以处理绝大多数跨平台项目。为了更好发挥平台特性，可以使用一些平台特有的变量。更多信息请看 <a href="qmake-platform-notes.html">平台说明</a>.</p>
 <a name="building-a-project"></a>
-<h2 id="building-a-project">Building a Project</h2>
-<p>For simple projects, you only need to run qmake in the top level directory of your project to generate a Makefile. You can then run your platform's <code>make</code> tool to build the project according to the Makefile.</p>
-<p>For more information about the environment variables that qmake uses when configuring the build process, see <a href="qmake-environment-reference.html">Configuring qmake</a>.</p>
+<h2 id="building-a-project">工程生成</h2>
+<p>
+对于简单工程，你仅需要在自己项目最上层目录下，运行qmake命令就可以生成makefile文件。你也可以运行自己平台的<code>make</code>工具来生成makefile文件。</p>
+<p>在配置生成过程中，更多关于环境变量信息，请看<a href="qmake-environment-reference.html">配置qmake</a>.</p>
 <a name="using-third-party-libraries"></a>
-<h2 id="using-third-party-libraries">Using Third Party Libraries</h2>
-<p>The guide to <a href="../qtdoc/platform-notes-qnx.html#third-party-libraries">Third Party Libraries</a> shows you how to use simple third party libraries in your Qt project.</p>
+<h2 id="using-third-party-libraries">使用第三方库</h2>
+<p>向导 <a href="../qtdoc/platform-notes-qnx.html#third-party-libraries">第三方库</a> 告诉你在自己的qt项目中如何简单使用第三方库。</p>
 <a name="precompiling-headers"></a>
-<h2 id="precompiling-headers">Precompiling Headers</h2>
-<p>In large projects, it is possible to take advantage of precompiled header files to speed up the build process. For more information, see <a href="qmake-precompiledheaders.html">Using Precompiled Headers</a>.</p>
+<h2 id="precompiling-headers">预编译头文件</h2>
+<p>在大型项目中，为了提高编译生成进度，可以使用高级特效：预编译头文件。更多信息请看 <a href="qmake-precompiledheaders.html">使用预编译头文件</a>.</p>
 </div>
 <!-- @@@qmake-overview.html -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="qmake-manual.html">qmake Manual</a>
+<a class="prevPage" href="qmake-manual.html">qmake手册</a>
 <span class="naviSeparator">  &#9702;  </span>
-<a class="nextPage" href="qmake-tutorial.html">Getting Started</a>
+<a class="nextPage" href="qmake-tutorial.html">向导开始</a>
 </p>
         </div>
        </div>
