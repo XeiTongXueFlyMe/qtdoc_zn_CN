@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instructionals module="QtWebEngine">
+    <examples>
+        <example name="WebEngine Content Manipulation Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-contentmanipulation-example.html" projectPath="webenginewidgets/contentmanipulation/contentmanipulation.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/contentmanipulation-example.png">
+            <description><![CDATA[Demonstrates how to load and manipulate web content.]]></description>
+            <tags>content,engine,manipulation,web,webengine</tags>
+            <fileToOpen mainFile="true">webenginewidgets/contentmanipulation/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Cookie Browser Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-cookiebrowser-example.html" projectPath="webenginewidgets/cookiebrowser/cookiebrowser.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/cookiebrowser.png">
+            <description><![CDATA[A cookie browser based on Qt WebEngine Widgets]]></description>
+            <tags>browser,cookie,engine,web,webengine</tags>
+            <fileToOpen mainFile="true">webenginewidgets/cookiebrowser/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Demo Browser Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-demobrowser-example.html" projectPath="webenginewidgets/demobrowser/demobrowser.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/browser-demo.png">
+            <description><![CDATA[A demo browser based on Qt WebEngine Widgets]]></description>
+            <tags>browser,demo,engine,web,webengine</tags>
+            <fileToOpen mainFile="true">webenginewidgets/demobrowser/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Markdown Editor Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-markdowneditor-example.html" projectPath="webenginewidgets/markdowneditor/markdowneditor.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/markdowneditor-example.png" isHighlighted="true">
+            <description><![CDATA[Demonstrates how to integrate a web engine in a hybrid desktop application.]]></description>
+            <tags>editor,engine,markdown,web,webengine</tags>
+            <fileToOpen mainFile="true">webenginewidgets/markdowneditor/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Qt Quick Custom Dialogs Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webengine-customdialogs-example.html" projectPath="webengine/customdialogs/customdialogs.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/customdialogs.png">
+            <description><![CDATA[Customizes UI elements of Qt WebEngine's dialogs]]></description>
+            <tags>custom,dialogs,engine,quick,web,webengine</tags>
+            <fileToOpen>webengine/customdialogs/main.cpp</fileToOpen>
+            <fileToOpen mainFile="true">webengine/customdialogs/main.qml</fileToOpen>
+        </example>
+        <example name="WebEngine Qt Quick Minimal Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webengine-minimal-example.html" projectPath="webengine/minimal/minimal.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/minimal-example.png">
+            <description><![CDATA[Displays a web page using the Qt Quick integration of Qt WebEngine]]></description>
+            <tags>engine,minimal,quick,web,webengine</tags>
+            <fileToOpen>webengine/minimal/main.cpp</fileToOpen>
+            <fileToOpen mainFile="true">webengine/minimal/main.qml</fileToOpen>
+        </example>
+        <example name="WebEngine Quick Nano Browser" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webengine-quicknanobrowser-example.html" projectPath="webengine/quicknanobrowser/quicknanobrowser.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/quicknanobrowser-demo.jpg" isHighlighted="true">
+            <description><![CDATA[A web browser implemented using the WebEngineView QML type.]]></description>
+            <tags>browser,engine,nano,quick,web,webengine</tags>
+            <fileToOpen mainFile="true">webengine/quicknanobrowser/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Recipe Browser" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webengine-recipebrowser-example.html" projectPath="webengine/recipebrowser/recipebrowser.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/recipebrowser-demo.jpg">
+            <description><![CDATA[A small hybrid application based on the WebEngineView QML type and Qt Quick Controls 2.]]></description>
+            <tags>browser,engine,recipe,web,webengine</tags>
+            <fileToOpen>webengine/recipebrowser/main.cpp</fileToOpen>
+            <fileToOpen mainFile="true">webengine/recipebrowser/resources/qml/main.qml</fileToOpen>
+        </example>
+        <example name="WebEngine Widgets Minimal Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-minimal-example.html" projectPath="webenginewidgets/minimal/minimal.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/minimal-example.png">
+            <description><![CDATA[Displays a web page using Qt WebEngine Widgets]]></description>
+            <tags>engine,minimal,web,webengine,widgets</tags>
+            <fileToOpen mainFile="true">webenginewidgets/minimal/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Widgets Simple Browser Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-simplebrowser-example.html" projectPath="webenginewidgets/simplebrowser/simplebrowser.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/simplebrowser.png">
+            <description><![CDATA[A simple browser based on Qt WebEngine Widgets]]></description>
+            <tags>browser,engine,simple,web,webengine,widgets</tags>
+            <fileToOpen mainFile="true">webenginewidgets/simplebrowser/main.cpp</fileToOpen>
+        </example>
+        <example name="WebEngine Widgets Spellchecker Example" docUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/qtwebengine-webenginewidgets-spellchecker-example.html" projectPath="webenginewidgets/spellchecker/spellchecker.pro" imageUrl="qthelp://org.qt-project.qtwebengine.580/qtwebengine/images/spellchecker-example.png">
+            <description><![CDATA[Integrates a spellchecker into a simple HTML form.]]></description>
+            <tags>engine,spellchecker,web,webengine,widgets</tags>
+            <fileToOpen mainFile="true">webenginewidgets/spellchecker/main.cpp</fileToOpen>
+        </example>
+    </examples>
+</instructionals>

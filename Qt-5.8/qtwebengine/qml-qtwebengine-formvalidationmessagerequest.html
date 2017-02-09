@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- qquickwebenginedialogrequests.cpp -->
+  <title>FormValidationMessageRequest QML Type | Qt WebEngine 5.8</title>
+  <link rel="stylesheet" type="text/css" href="style/offline-simple.css" />
+  <script type="text/javascript">
+    window.onload = function(){document.getElementsByTagName("link").item(0).setAttribute("href", "style/offline.css");};
+  </script>
+</head>
+<body>
+<div class="header" id="qtdocheader">
+  <div class="main">
+    <div class="main-rounded">
+      <div class="navigationbar">
+        <table><tr>
+<td ><a href="../qtdoc/supported-platforms-and-configurations.html#qt-5-8">Qt 5.8</a></td><td ><a href="qtwebengine-index.html">Qt WebEngine</a></td><td ><a href="qtwebengine-qmlmodule.html">QML Types</a></td><td >FormValidationMessageRequest QML Type</td></tr></table><table class="buildversion"><tr>
+<td id="buildversion" width="100%" align="right">Qt 5.8.0 Reference Documentation</td>
+        </tr></table>
+      </div>
+    </div>
+<div class="content">
+<div class="line">
+<div class="content mainContent">
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">FormValidationMessageRequest QML Type</h1>
+<span class="subtitle"></span>
+<!-- $$$FormValidationMessageRequest-brief -->
+<p>A request for showing a HTML5 form validation message to the user. <a href="#details">More...</a></p>
+<!-- @@@FormValidationMessageRequest -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtWebEngine 1.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  QtWebEngine 1.4</td></tr></table></div><ul>
+<li><a href="qml-qtwebengine-formvalidationmessagerequest-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-qtwebengine-formvalidationmessagerequest.html#accepted-prop">accepted</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-qtwebengine-formvalidationmessagerequest.html#anchor-prop">anchor</a></b></b> : rectangle</li>
+<li class="fn"><b><b><a href="qml-qtwebengine-formvalidationmessagerequest.html#subText-prop">subText</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-qtwebengine-formvalidationmessagerequest.html#text-prop">text</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="qml-qtwebengine-formvalidationmessagerequest.html#type-prop">type</a></b></b> : enumeration</li>
+</ul>
+<!-- $$$FormValidationMessageRequest-description -->
+<a name="details"></a>
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>A <a href="qml-qtwebengine-formvalidationmessagerequest.html">FormValidationMessageRequest</a> is passed as an argument of the <a href="qml-qtwebengine-webengineview.html#formValidationMessageRequested-signal">WebEngineView::formValidationMessageRequested</a> signal. It is generated when the handling of the validation message is requested.</p>
+<p>The <a href="qml-qtwebengine-formvalidationmessagerequest.html#accepted-prop">accepted</a> property of the request indicates whether the request is handled by the user code or the default message should be displayed.</p>
+<p>The following code uses a custom message to handle the request:</p>
+<pre class="cpp">
+
+  WebEngineView {
+      <span class="comment">// ...</span>
+      onFormValidationMessageRequested: function(request) {
+          request<span class="operator">.</span>accepted <span class="operator">=</span> <span class="keyword">true</span>;
+          <span class="keyword">switch</span> (request<span class="operator">.</span>type) {
+              <span class="keyword">case</span> FormValidationMessageRequest<span class="operator">.</span>Show:
+                  validationMessage<span class="operator">.</span>text <span class="operator">=</span> request<span class="operator">.</span>text;
+                  validationMessage<span class="operator">.</span>x <span class="operator">=</span> request<span class="operator">.</span>x;
+                  validationMessage<span class="operator">.</span>y <span class="operator">=</span> request<span class="operator">.</span>y
+                  validationMessage<span class="operator">.</span>visible <span class="operator">=</span> <span class="keyword">true</span>;
+                  <span class="keyword">break</span>;
+               <span class="keyword">case</span> FormValidationMessageRequest<span class="operator">.</span>Move:
+                  <span class="keyword">break</span>;
+               <span class="keyword">case</span> FormValidationMessageRequest<span class="operator">.</span>Hide:
+                  validationMessage<span class="operator">.</span>visible <span class="operator">=</span> <span class="keyword">false</span>;
+                  <span class="keyword">break</span>;
+               }
+      }
+      <span class="comment">// ...</span>
+  }
+
+</pre>
+<!-- @@@FormValidationMessageRequest -->
+<h2>Property Documentation</h2>
+<!-- $$$accepted -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="accepted-prop">
+<td class="tblQmlPropNode"><p>
+<a name="accepted-prop"></a><span class="name">accepted</span> : <span class="type">bool</span></p></td></tr>
+</table></div>
+</div><div class="qmldoc"><p>Indicates whether the form validation request has been accepted by the signal handler.</p>
+<p>If the property is <code>false</code> after any signal handlers for WebEngineView::validationMessageRequested have been executed, a default file validation message will be shown. To prevent this, set <code>request.accepted</code> to <code>true</code>.</p>
+<p>The default is <code>false</code>.</p>
+</div></div><!-- @@@accepted -->
+<br/>
+<!-- $$$anchor -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="anchor-prop">
+<td class="tblQmlPropNode"><p>
+<a name="anchor-prop"></a><span class="qmlreadonly">[read-only] </span><span class="name">anchor</span> : <span class="type">rectangle</span></p></td></tr>
+</table></div>
+</div><div class="qmldoc"><p>An anchor of an element in the viewport for which the form validation message should be displayed.</p>
+</div></div><!-- @@@anchor -->
+<br/>
+<!-- $$$subText -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="subText-prop">
+<td class="tblQmlPropNode"><p>
+<a name="subText-prop"></a><span class="qmlreadonly">[read-only] </span><span class="name">subText</span> : <span class="type">bool</span></p></td></tr>
+</table></div>
+</div><div class="qmldoc"><p>The subtext of the form validation message.</p>
+</div></div><!-- @@@subText -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<a name="text-prop"></a><span class="qmlreadonly">[read-only] </span><span class="name">text</span> : <span class="type">bool</span></p></td></tr>
+</table></div>
+</div><div class="qmldoc"><p>The text of the form validation message.</p>
+</div></div><!-- @@@text -->
+<br/>
+<!-- $$$type -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="type-prop">
+<td class="tblQmlPropNode"><p>
+<a name="type-prop"></a><span class="qmlreadonly">[read-only] </span><span class="name">type</span> : <span class="type">enumeration</span></p></td></tr>
+</table></div>
+</div><div class="qmldoc"><p>The type of the form validation message request.</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>ValidationMessageRequest.Show</code></td><td class="topAlign">The form validation message should be shown.</td></tr>
+<tr><td class="topAlign"><code>ValidationMessageRequest.Hide</code></td><td class="topAlign">The form validation message should be hidden.</td></tr>
+<tr><td class="topAlign"><code>ValidationMessageRequest.Move</code></td><td class="topAlign">The form validation message should be moved.</td></tr>
+</table></div>
+</div></div><!-- @@@type -->
+<br/>
+        </div>
+       </div>
+   </div>
+   </div>
+</div>
+<div class="footer">
+   <p>
+   <acronym title="Copyright">&copy;</acronym> 2016 The Qt Company Ltd.
+   Documentation contributions included herein are the copyrights of
+   their respective owners.<br>    The documentation provided herein is licensed under the terms of the    <a href="http://www.gnu.org/licenses/fdl.html">GNU Free Documentation    License version 1.3</a> as published by the Free Software Foundation.<br>    Qt and respective logos are trademarks of The Qt Company Ltd.     in Finland and/or other countries worldwide. All other trademarks are property
+   of their respective owners. </p>
+</div>
+</body>
+</html>
