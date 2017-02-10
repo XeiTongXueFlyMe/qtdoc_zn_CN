@@ -27,6 +27,8 @@ qq群：58235799
 
 张继华 811471107@qq.com  模块：qtdesigner
 
+张珊珊 zhangshanshan0601@163.com
+
 
 特殊贡献者：
 
